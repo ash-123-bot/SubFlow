@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubFlow – Multilingual YouTube Subtitles & Titles</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Nav */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 18px; font-weight: 700; color: #7C3AED;
+      text-decoration: none;
+    }
+    .nav-brand svg { width: 28px; height: 28px; }
+    .nav-link {
+      color: #555; text-decoration: none; font-size: 14px;
+    }
+    .nav-link:hover { color: #7C3AED; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: #EDE9FE;
+      color: #7C3AED;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #111;
+      margin-bottom: 20px;
+    }
+    h1 span { color: #7C3AED; }
+    .hero-desc {
+      font-size: 18px;
+      color: #555;
+      max-width: 540px;
+      margin: 0 auto 36px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #7C3AED;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #6D28D9; }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+    .feature-card {
+      background: #FAFAFA;
+      border: 1px solid #F0F0F0;
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .feature-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* How it works */
+    .how {
+      background: #F8F5FF;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .how h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .step {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 20px;
+      width: 180px;
+      text-align: center;
+    }
+    .step-num {
+      width: 32px; height: 32px;
+      background: #7C3AED;
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px;
+      margin: 0 auto 12px;
+    }
+    .step p { font-size: 13px; color: #444; line-height: 1.5; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #f0f0f0;
+    }
+    footer a { color: #7C3AED; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="/">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="7" fill="#7C3AED"/>
+        <rect x="5" y="8"  width="12" height="2.5" rx="1.25" fill="white"/>
+        <rect x="5" y="13" width="9"  height="2.5" rx="1.25" fill="white"/>
+        <path d="M20 21V14.5M20 14.5L17 17M20 14.5L23 17"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      SubFlow
+    </a>
+    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">Chrome Extension</div>
+    <h1>Grow Your YouTube Channel <span>Globally</span></h1>
+    <p class="hero-desc">
+      SubFlow automatically translates your video titles and uploads multilingual subtitles
+      to 15+ languages — directly from your browser, no server required.
+    </p>
+    <a class="btn-primary"
+       href="https://chrome.google.com/webstore"
+       target="_blank">Add to Chrome — It's Free</a>
+  </section>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🌍</div>
+      <h3>15+ Languages</h3>
+      <p>Spanish, Japanese, Korean, Hindi, Arabic, French and more — all at once.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎬</div>
+      <h3>Subtitle Upload</h3>
+      <p>Downloads YouTube's auto-translated captions and uploads them as proper subtitle tracks.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📝</div>
+      <h3>Title Translation</h3>
+      <p>Updates your video's localized titles so every region sees your content in their language.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>No Server</h3>
+      <p>Everything runs in your browser. Your YouTube credentials never leave your device.</p>
+    </div>
+  </div>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <p>Install SubFlow from the Chrome Web Store</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <p>Connect your YouTube channel with one click</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <p>Paste your Video ID or URL</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <p>Hit Start — subtitles and titles are updated automatically</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SubFlow &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:cherish.mxb@gmail.com">Contact</a></p>
+  </footer>
+
+</body>
+</html>
